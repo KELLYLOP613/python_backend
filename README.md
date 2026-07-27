@@ -1,87 +1,136 @@
 # Python Backend
 
-Repositorio correspondiente a las evidencias de la actividad **GA1-220501093-04-AA1-EV01 – Fundamentos de Python: variables, operadores y manipulación de cadenas**, del programa Tecnólogo en Análisis y Desarrollo de Software (SENA).
+Repositorio correspondiente al desarrollo de las evidencias de aprendizaje de la **Guía 01** del curso **Python Avanzado**, perteneciente al programa **Tecnólogo en Análisis y Desarrollo de Software (ADSO)** del **Servicio Nacional de Aprendizaje (SENA)**.
 
-## Estructura del repositorio
+En este repositorio se encuentran las soluciones de las guías propuestas durante el curso, organizadas por evidencia y por temática para facilitar su consulta y mantenimiento.
 
-fundamentos_python/
-  src/
-    puntaje_final_jugador.py
-    EV01_Fundamentos/
-      seccion1_hola_mundo/
-        01_LAB_Funcion_Print.py
-        02_LAB_Print_Argumentos.py
-        03_LAB_Formato_Salida.py
-      seccion2_literales/
-        01_LAB_Literales_Cadenas.py
-      seccion3_operadores/
-        01_LAB_Ejs_Operadores.py
-        operadores.md
-      seccion4_variables/
-        01_LAB_Variables.py
-        02_LAB_Var_ConvSimple.py
-        03_LAB_Operadores_Expresiones.py
-        04_LAB_Ejs_Algoritmos.py
-    EV02_Control_Funciones/
-      seccion1_condicionales/
-      seccion2_iterativas/
-      seccion3_funciones/
+---
 
-## Contenido
+# Estructura del proyecto
 
-### EV01 - Fundamentos
+```text
+python_backend/
+│
+├── fundamentos_python/
+│   └── src/
+│       ├── puntaje_final_jugador.py
+│       │
+│       ├── EV01_Fundamentos/
+│       │   ├── README.md
+│       │   ├── seccion1_hola_mundo/
+│       │   │   ├── 01_LAB_Funcion_Print.py
+│       │   │   ├── 02_LAB_Print_Argumentos.py
+│       │   │   └── 03_LAB_Formato_Salida.py
+│       │   │
+│       │   ├── seccion2_literales/
+│       │   │   └── 01_LAB_Literales_Cadenas.py
+│       │   │
+│       │   ├── seccion3_operadores/
+│       │   │   ├── 01_LAB_Ejs_Operadores.py
+│       │   │   └── operadores.md
+│       │   │
+│       │   └── seccion4_variables/
+│       │       ├── 01_LAB_Variables.py
+│       │       ├── 02_LAB_Var_ConvSimple.py
+│       │       ├── 03_LAB_Operadores_Expresiones.py
+│       │       └── 04_LAB_Ejs_Algoritmos.py
+│       │
+│       └── EV02_Control_Funciones/
+│       │   ├── README.md
+│           ├── seccion1_condicionales/
+│           │   └── 01_LAB_Ejs_Condicionales.py
+│           │
+│           ├── seccion2_iterativas/
+│           │   ├── 01_bucle_for.py
+│           │   ├── 02_bucle_while.py
+│           │   ├── 03_break_continue.py
+│           │   └── 04_pass_else.py
+│           │
+│           └── seccion3_funciones/
+│               ├── 01_definicion_basica.py
+│               ├── 02_parametros_argumentos.py
+│               ├── 03_return.py
+│               └── 04_docstrings.py
+│
+├── .gitignore
+└── README.md
+```
 
-| Sección | Contenido |
-|---|---|
-| Sección 1 - Hola Mundo | La función print(), argumentos posicionales y de palabra clave (sep, end), caracteres de escape (\n) |
-| Sección 2 - Literales | Enteros, flotantes, notación científica, cadenas (comillas/apóstrofes, escape de comillas), booleanos |
-| Sección 3 - Operadores | Operadores aritméticos, prioridad de operadores, paréntesis. Ver documentación detallada abajo |
-| Sección 4 - Variables | Creación y uso de variables, operadores abreviados, convertidor de unidades, evaluación de expresiones algebraicas, 16 ejercicios de algoritmos aplicados a un contexto de videojuego |
+---
 
-### EV02 - Control y Funciones
-- Estructuras condicionales
-- Estructuras iterativas
+# Contenido
+
+## EV01 – Fundamentos de Python
+
+Esta evidencia desarrolla los conceptos básicos del lenguaje Python.
+
+| Sección | Temas principales |
+|----------|-------------------|
+| **Sección 1** | Función `print()`, argumentos (`sep`, `end`), caracteres de escape y formato de salida. |
+| **Sección 2** | Literales numéricos, cadenas, booleanos y notación científica. |
+| **Sección 3** | Operadores aritméticos, prioridad de operadores, exponenciación, división entera y módulo. |
+| **Sección 4** | Variables, operadores abreviados, convertidor simple, expresiones y ejercicios de algoritmos. |
+
+La documentación completa de esta evidencia se encuentra en:
+
+```text
+fundamentos_python/src/EV01_Fundamentos/README.md
+```
+
+---
+
+## EV02 – Control y Funciones
+
+Esta evidencia reúne ejercicios relacionados con las estructuras de control y la modularización de programas.
+
+Temas desarrollados:
+
+- Estructuras condicionales (`if`, `elif`, `else`)
+- Ciclos `for`
+- Ciclos `while`
+- Instrucciones `break`, `continue` y `pass`
 - Funciones
+- Parámetros y argumentos
+- Valores de retorno (`return`)
+- Docstrings y documentación de funciones
 
-## Documentación de los ejercicios de operadores matemáticos
+La documentación completa de esta evidencia se encuentra en:
 
-Resueltos manualmente y comprobados con Python en seccion3_operadores/operadores.py. El detalle paso a paso de los 15 ejercicios está en seccion3_operadores/operadores.md.
+```text
+fundamentos_python/src/EV02_Control_Funciones/README.md
+```
 
-### Lógica utilizada
+---
 
-Todos los ejercicios se resolvieron aplicando la jerarquía de prioridades de Python:
+# Cómo ejecutar los programas
 
-1. Paréntesis () — se resuelven primero.
-2. Exponenciación ** — mayor prioridad, con enlazado del lado derecho.
-3. Multiplicación *, división /, división entera //, módulo % — misma prioridad, se evalúan de izquierda a derecha.
-4. Suma + y resta - — menor prioridad.
+1. Tener instalado **Python 3.13** o una versión superior.
+2. Abrir una terminal ubicada en la carpeta raíz del proyecto.
+3. Ejecutar el archivo deseado.
 
-### Ejemplo de salida (ejercicio 1)
+Ejemplo:
 
-Expresión: 5 + 3 * 2
+```bash
+python fundamentos_python/src/puntaje_final_jugador.py
+```
 
-Explicación: la multiplicación tiene mayor prioridad que la suma, así que primero se calcula 3 * 2 = 6, y después 5 + 6 = 11.
+También es posible ejecutar cualquier archivo `.py` ubicado dentro de las carpetas correspondientes a cada evidencia.
 
->>> print(5 + 3 * 2)
-11
+---
 
-### Ejemplo de salida (ejercicio 7, con exponenciación)
+# Tecnologías utilizadas
 
-Expresión: 5 * 2 ** 3
+- Python 3
+- Visual Studio Code
+- Git
+- GitHub
 
-Explicación: la exponenciación tiene la prioridad más alta, así que primero se calcula 2 ** 3 = 8, y después 5 * 8 = 40.
+---
 
->>> print(5 * 2 ** 3)
-40
+# Autor
 
-(El resto de los 15 ejercicios, con su paso a paso completo, está documentado en seccion3_operadores/operadores.md.)
+**Kelly Johana Lopera Chica**
 
-## Cómo ejecutar los programas
+Aprendiz del programa **Tecnólogo en Análisis y Desarrollo de Software (ADSO)**
 
-1. Tener Python 3 instalado.
-2. Ejecutar cualquier script desde la terminal, por ejemplo:
-   python fundamentos_python/src/puntaje_final_jugador.py
-3. Los scripts que usan input() pedirán datos por consola; escribe un valor numérico y presiona Enter en cada solicitud.
-
-## Autor
-Kelly Lopera — Aprendiz, Tecnólogo en Análisis y Desarrollo de Software.
+Servicio Nacional de Aprendizaje **SENA**
